@@ -96,6 +96,9 @@ function M.setup()
         Label                                    = { fg = c.orange },                                        --    case, default, etc.
         Operator                                 = { fg = c.orange },                                        -- "sizeof", "+", "*", etc.
         Keyword                                  = { fg = c.red, style = options.styles.keywords },          --  any other keyword
+        -- Custom Rust accents: distinct shades of orange for `self` and `trait`.
+        KeywordSelf                              = { fg = c.orange,      italic = options.enable_italics }, -- bright Solarized orange
+        KeywordTrait                             = { fg = c.mute_orange, bold = true },                     -- burnt amber
         Exception                                = { fg = c.red, italic = options.enable_italics },          --  try, catch, throw
         PreProc                                  = { fg = c.purple, italic = options.enable_italics },       -- (preferred) generic Preprocessor
         PreCondit                                = { fg = c.purple, italic = options.enable_italics },

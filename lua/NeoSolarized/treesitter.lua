@@ -202,6 +202,16 @@ M.defaults = {
     default = true,
     link = "@keyword",
   },
+  -- Custom Rust accents: distinct shades of orange so `self` and `trait`
+  -- stand apart from the regular Keyword colour.
+  ["@keyword.self"] = {
+    default = true,
+    link = "KeywordSelf",
+  },
+  ["@keyword.trait"] = {
+    default = true,
+    link = "KeywordTrait",
+  },
   ["@label"] = {
     default = true,
     link = "Label",
